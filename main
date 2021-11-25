@@ -1,0 +1,44 @@
+package JuevesPrimo;
+
+import java.util.Scanner;
+
+public class Primo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		/*
+		 * El ordenador tiene que pedir un número
+		 * Mostrar/Imprimir desde ese número -1 hasta 1
+		 * Ej: Introduce un número 7
+		 * Salida: 6 5 4 3 2 1
+		 */
+		Scanner teclado = new Scanner(System.in);
+		
+		
+		System.out.print("Dame un número: ");
+		int numero = teclado.nextInt();
+		
+		boolean centinela = false;//true
+		
+		int aux = numero;
+		aux = aux -1;
+		
+		while(aux > 1) {
+			int resultado = numero % aux;
+			if (resultado == 0) {
+				centinela = true; //No es primo
+			}
+			System.out.println("Número: " + aux + " su resto: " + resultado);
+			aux -= 1;
+		}
+		if (centinela == true) {
+			System.out.println("El número " + numero + " no es primo");
+		}else {
+			System.out.println("El número " + numero + " es primo");
+		}
+
+	}
+
+}
