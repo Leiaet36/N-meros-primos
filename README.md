@@ -1,2 +1,2 @@
 # NumerosPrimos
-Mostrará si un numero es primo o no
+Se introducirán una serie de números por consola y el programa te dirá cuál es son los números primos.
