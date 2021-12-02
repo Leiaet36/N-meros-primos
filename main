@@ -16,6 +16,7 @@ public class Primo {
 		 */
 		Scanner teclado = new Scanner(System.in);
 		
+		System.out.print("Programa para saber los números primos.");
 		
 		System.out.print("Dame un número: ");
 		int numero = teclado.nextInt();
